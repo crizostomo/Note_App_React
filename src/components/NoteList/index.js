@@ -1,2 +1,2 @@
-import GradeList from "./GradeList"
-export default GradeList
+import NoteList from "./NoteList"
+export default NoteList

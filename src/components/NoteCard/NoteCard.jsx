@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import "./style.css"
-
-export default class NoteCard extends React.Component {
+export default class NoteCard extends Component {
   render() {
     return (
       <section className="note-card">
         <header className="note-card_header">
-          <h3 className="note-card_title">Title</h3>
+          <h3 className="note-card_title">{this.props.title}</h3>
         </header>
-        <p className="note-card_textr">Write your note</p>
+        <p className="note-card_text">{this.props.text}</p>
       </section>
     );
   }
